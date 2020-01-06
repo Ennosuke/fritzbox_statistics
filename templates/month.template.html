@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fritz.box Statistics for month %month%</title>
+</head>
+    <body>
+        <h1>fritz.box Statistics for month %month%</h1>
+        <div id="online_time">
+            <h2>Online time statistics</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Total time online (hh:mm)</th>
+                        <td>%total_time_online%</td>
+                    </tr>
+                    <tr>
+                        <th>Average time online per day (hh:mm)</th>
+                        <td>%average_time_online%</td>
+                    </tr>
+                    <tr>
+                        <th>Days with more than 5min offline</th>
+                        <td>%days_offline_5min%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img alt="Days with more than 5min offline time" src="%image_days_offline_5min%">
+        </div>
+        <div id="data_usage">
+            <h2>Data usage statistics</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Total data</th>
+                        <td>%total_data%</td>
+                    </tr>
+                    <tr>
+                        <th>Received data</th>
+                        <td>%received_data%</td>
+                    </tr>
+                    <tr>
+                        <th>Send data</th>
+                        <td>%send_data%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img alt="Percentage of send to received data" src="%image_data_overall%">
+            <h3>Highest and lowest days</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Date</th>
+                    <th>Data</th>
+                </tr>
+                <tr>
+                    <th>Total data</th>
+                    <td>%total_highest_date%</td>
+                    <td>%total_highest%</td>
+                </tr>
+                <tr>
+                    <th>Send data</th>
+                    <td>%send_highest_date%</td>
+                    <td>%send_highest%</td>
+                </tr>
+                <tr>
+                    <th>Received data</th>
+                    <td>%received_highest_date%</td>
+                    <td>%received_highest%</td>
+                </tr>
+            </table>
+            <img alt="Development of data usage" src="%image_dev_usage%">
+        </div>
+        <div id="speed_data">
+            <h2>Speed data</h2>
+            <table>
+                <tr>
+                    <th>Average speed</th>
+                    <td>%average_speed_up% kbit/s up</td>
+                    <td>%average_speed_down% kbit/s down</td>
+                </tr>
+                <tr>
+                    <th>Highest speed</th>
+                    <td>%highest_speed_up% kbit/s up on %highest_up_date%</td>
+                    <td>%highest_speed_down% kbit/s down on %highest_down_date%</td>
+                </tr>
+                <tr>
+                    <th>Lowest speed</th>
+                    <td>%lowest_speed_up% kbit/s up on %lowest_up_date%</td>
+                    <td>%lowest_speed_down% kbit/s down on %lowest_down_date%</td>
+                </tr>
+            </table>
+            <img alt="Development of speed" src="%image_dev_speed%">
+        </div>
+    </body>
+</html>
